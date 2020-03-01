@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot-gadgets</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,9 +22,17 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#product">Product</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Product
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#smartphone">Smartphone</a>
+                      <a class="dropdown-item" href="#laptop">Laptop</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About Us</a>
                 </li>
@@ -35,6 +44,197 @@
           </nav>
     </div>
 
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <div class="row d-flex align-items-center">
+                   <div class="col-md-5">
+                        <h1>Mackbook Pro</h1>
+                        <p class="py-2">Contrary to popular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam quas veritatis praesentium nihil error aliquam id porro neque.</p>
+                        <button class="text-uppercase buy-now-btn">Buy Now →</button>
+                   </div>
+                   <div class="col-md-7">
+                    <img src="img/banner-products/product-1.png" class="d-block w-100" alt="...">
+                   </div>
+               </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-5">
+                        <h1>Mackbook Pro</h1>
+                        <p>Contrary to popular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam quas veritatis praesentium nihil error aliquam id porro neque.</p>
+                        <button class="text-uppercase buy-now-btn">Buy Now →</button>
+                    </div>
+                    <div class="col-md-7">
+                     <img src="img/banner-products/slider-1.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-5">
+                        <h1>Mackbook Pro</h1>
+                        <p class="py-2">Contrary to popular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam quas veritatis praesentium nihil error aliquam id porro neque.</p>
+                        <button class="text-uppercase buy-now-btn">Buy Now →</button>
+                    </div>
+                    <div class="col-md-7">
+                     <img src="img/banner-products/slider-3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+
+    <div class="container" id="product">
+        <div class="d-flex justify-content-between pb-3">
+            <h3 id="smartphone">Smartphone</h3>
+            <h6 class="orange-color">See All</h6>
+        </div>
+        <div class="card-deck">
+            <div class="card text-center">
+              <img src="img/phone/phone-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">iPhone 11 pro</h5>
+                <p class="card-text">This card has supporting text below as a natural.</p>
+                <h5>$999</h5>
+                <button class="text-uppercase buy-now-btn">Buy Now →</button>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img src="img/phone/phone-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Samsung Glaxy Note10+</h5>
+                <p class="card-text">This card has supporting text below as a natural.</p>
+                <h5>$799</h5>
+                <button class="text-uppercase buy-now-btn">Buy Now →</button>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img src="img/phone/phone-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Xiomi Redmi 22</h5>
+                <p class="card-text">This card has supporting text below as a natural.</p>
+                <h5>$699</h5>
+                <button class="text-uppercase buy-now-btn">Buy Now →</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-between py-3">
+            <h3 id="laptop">Laptop</h3>
+            <h6 class="orange-color">See All</h6>
+        </div>
+        <div class="card-deck">
+            <div class="card text-center">
+              <img src="img/laptop/product-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Asus VivoBook</h5>
+                <p class="card-text">This card has supporting text below as a natural.</p>
+                <h5>$999</h5>
+                <button class="text-uppercase buy-now-btn">Buy Now →</button>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img src="img/laptop/product-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Razer Blade 15</h5>
+                <p class="card-text">This card has supporting text below as a natural.</p>
+                <h5>$2799</h5>
+                <button class="text-uppercase buy-now-btn">Buy Now →</button>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img src="img/laptop/product-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Xiomi NoteBook Pro</h5>
+                <p class="card-text">This card has supporting text below as a natural.</p>
+                <h5>$999</h5>
+                <button class="text-uppercase buy-now-btn">Buy Now →</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container" id="categories">
+        <h3 class="py-5">Categories</h3>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                       <div class="img-shape">
+                        <img src="img/Categories/bag.png" alt="">
+                        <h6 class="py-2">Bag</h6>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="img-shape">
+                        <img src="img/Categories/perfume.png" alt="">
+                        <h6 class="py-2">Beauty</h6>
+                       </div>
+                       <div class="py-5"></div>
+                       <div class="img-shape">
+                        <img src="img/Categories/shoe.png" alt="">
+                        <h6 class="py-2">Shoe</h6>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+               <img class="w-100" src="img/Categories/pale-order.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+        <footer>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-justify pr-5">
+                    <h2 id="about">About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eaque provident odit sint commodi placeat eum laudantium vero maiores facere nam ipsa quisquam sed, consequatur obcaecati non doloremque assumenda quod?</p>
+                    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima mollitia cumque nesciunt modi? Sequi maiores facilis nisi laboriosam, animi natus, vero ullam minus quasi labore ratione. Dolorem necessitatibus autem id.</p>
+                </div>
+                <div class="col-md-6 pl-5">
+                    <h2 id="contact">Contact Us</h2>
+                   <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your name" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Enter your information" name="" id="" class="form-control"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" class="text-uppercase buy-now-btn">
+                    </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <div class="footer">
+            <p>&copy;2020 All right reserved Apel.</p>
+        </div>
+   
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
