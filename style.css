@@ -57,6 +57,14 @@ p{
     padding: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px lightgray;
+
+    transition: all .3s ease;
+    -Webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 15px rgb(153, 138, 138);
 }
 
 #categories{
